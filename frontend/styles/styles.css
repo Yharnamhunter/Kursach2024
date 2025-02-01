@@ -6,7 +6,7 @@ body {
 button {
     padding: 10px;
     background-color: #007bff;
-    color: white;
+    color: red;
     border: none;
     border-radius: 5px;
     cursor: pointer;
