@@ -1,17 +1,10 @@
-body {
+.body {
     font-family: Arial, sans-serif;
     background-color: #f7d8b3;
 }
 
-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: red;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+.funnycar {
+    width: 45vw;
+    height: auto;
+    border: 10px solid #562ef7;
 }

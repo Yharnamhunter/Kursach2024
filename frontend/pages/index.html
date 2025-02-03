@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Frontend</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Frontend of the project</title>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <h1>Artifical data generation model o0</h1>
-    <label for="username">Enter your request:</label>
-    <input type="text" id="request" name="request" placeholder="Request" required>
-    <button type="submit">Submit</button>
-    <script src="scripts/script.js"></script>
+    <header class="header">
+        <div class="header__text">
+            <h1 class="header__text-title">
+                Artifical data generation model o0
+            </h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_text">
+            <h2 class="username">
+                Enter your request:
+            </h2>
+            <input type="text" id="request" name="request" placeholder="Request" required>
+            <button class="submit">Submit</button>
+            <img class="funnycar" src="../assets/funnycar.jpg" alt="car">
+        </div>
+    </main>
+    
 </body>
 </html>
