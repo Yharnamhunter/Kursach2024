@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend of the project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моё портфолио!</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
     <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
+  </head>
+
+
+
+
+  <body class="body">
+
     <header class="header">
-        <div class="header__text">
-            <h1 class="header__text-title">
-                Artifical data generation model o0
-            </h1>
-        </div>
+      <div class="header__text">
+        <h1 class="header__text-title">Портфолио</h1>
+        <p class="header__text-subtitle">
+          Привет! Я <span style="color: #0586fe">Арсений</span> &mdash; начинающий
+          фронтенд-разработчик
+        </p>
+      </div>
+      <div class="header__img">
+        <img class="header__img-card" src="../assets/codeCards.png" alt="img" />
+      </div>
     </header>
+
     <main class="main">
-        <div class="main_text">
-            <h2 class="username">
-                Enter your request:
-            </h2>
-            <input type="text" id="request" name="request" placeholder="Request" required>
-            <button class="submit">Submit</button>
-            <div class="picture_frame">
-                <img class="funnycar" src="../assets/funnycar.jpg" alt="car">
-            </div>
+      <div class="main__container">
+        <h2 class="main__container_title">Обо мне</h2>
+        <ul class="main__container_text">
+          <li>Мне 18 лет, учусь на первом курсе ИВТ</li>
+          <li>Люблю смотреть на звезды</li>
+          <li>
+          </li>
+          <li>
+            Мои проекты вы можете посмотреть в моем
+            <a
+              href="https://github.com/Yharnamhunter"
+              class="main__container_link"
+              target="_blank"
+              >GitHub</a
+            >.
+          </li>
+        </ul>
+      </div>
+      <div class="main__info">
+        <p class="main__info-text">
+          Совсем недавно я начал заниматься веб-разработкой, но уже могу
+          показывать неплохие результаты!
+        </p>
+        <div class="main__info_container">
+          <p class="main__info_container-text">
+            Вы можете связаться со мной, узнать больше о моих проектах или
+            заказать свой.
+          </p>
+          <button
+          type="button"
+            onclick="toggleModal()"
+            class="modal-button"
+            id="contactButton"
+            onclick="toggleModal()"
+          >
+            Связаться со мной
+          </button>
         </div>
+      </div>
     </main>
-    
-</body>
+
+    <div class="modal">
+      <form class="modal__form">
+        
+        <div class="modal__form-header">
+          <h2 class="modal__form-title">Связаться со мной</h2>
+          <span class="close-button" onclick="toggleModal()">&times;</span>
+        </div>
+        
+        <div class="modal__form-wrapper">
+          <input type="text" placeholder="Имя" class="modal__form-input">
+          <input type="email" placeholder="email@email.com" class="modal__form-input">
+        </div>
+      
+        <button class="modal__form-submit" type="submit">Отправить!</button>
+      
+      </form>
+    </div>
+
+    <footer class="footer">
+      <a href="https://t.me/styleruorg" class="footer__text"
+        >&copy; 2024, Личный сайт разработчика</a
+      >
+    </footer>
+
+  </body>
+
+<script src="../scripts/script.js"></script>
+
 </html>
